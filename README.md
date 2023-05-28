@@ -24,7 +24,7 @@ val spark = SparkSession.builder()
 
 4). Load data: Use SparkSession to load your data into a DataFrame. Spark supports various file formats, such as CSV, JSON, Parquet, etc. You can also connect to external databases using Spark JDBC. 
 
-```
+```scala
 val data = spark.read
   .format("csv")
   .option("header", "true") // If the CSV file has a header
